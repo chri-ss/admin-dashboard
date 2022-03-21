@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
