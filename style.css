@@ -27,6 +27,8 @@
 .sidebar .dash-extras {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -43,19 +45,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
 }
 
 .sidebar .sidebar-header img {
   height: 50%;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid black;
 }
 
 .sidebar .sidebar-header h1 {
   -ms-grid-column-align: start;
       justify-self: start;
   font-size: 32px;
+  border: 1px solid black;
+}
+
+.sidebar li {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  text-align: left;
 }
 
 .sidebar a {
