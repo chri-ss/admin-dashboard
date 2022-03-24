@@ -7,7 +7,7 @@
   -ms-grid-rows: 1fr 6fr;
       grid-template-rows: 1fr 6fr;
   gap: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
@@ -86,6 +86,18 @@
   display: grid;
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.header .searchbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30fr;
+      grid-template-columns: 1fr 30fr;
+  gap: 15px;
 }
 
 .main {
