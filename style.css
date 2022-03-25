@@ -207,12 +207,32 @@
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
-  -ms-grid-rows: 1fr 8fr;
-      grid-template-rows: 1fr 8fr;
-  gap: 15px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr 12fr;
+      grid-template-rows: 1fr 12fr;
+  gap: 30px;
   background-color: #d7e9dd;
+  padding-left: 3rem;
+}
+
+.main h3, .main h4 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main h4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
 }
 
 .cards {
@@ -229,12 +249,7 @@
 .card {
   height: 200px;
   background-color: #fff;
-  border-left: 2rem solid #7c3aed;
-}
-
-h4 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
+  border-left: 1rem solid #7c3aed;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

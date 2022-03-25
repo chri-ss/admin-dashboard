@@ -155,21 +155,33 @@ html {
       background-color: $green;
       color: $white;
       border: none;
-      border-radius:2rem;
+      border-radius: 2rem;
       font-weight: bold;
       font-size: 16px;
       padding: 0.5rem 1rem 0.5rem 1rem;
     }
-
   }
 }
 
 .main {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 8fr;
-  gap: 15px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 12fr;
+  gap: 30px;
   background-color: $grey-green;
+  padding-left: 3rem;
+
+  h3, h4 {
+    display: grid;
+    align-items: end;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h4 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .cards {
@@ -182,9 +194,6 @@ html {
 .card {
   height: 200px;
   background-color: $white;
-  border-left: 2rem solid #7c3aed;
-}
-
-h4 {
-  grid-row: 1 / 2;
+  border-left: 1rem solid #7c3aed;
+  border-radius: 10px;
 }
