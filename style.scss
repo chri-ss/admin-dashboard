@@ -13,7 +13,6 @@ html {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  row-gap: 15px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -72,10 +71,12 @@ html {
 .header {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 3fr 4fr;
+  grid-template-rows: 2fr 3fr;
   align-items: center;
   justify-items: center;
   padding-left: 3rem;
+  box-shadow: 0 4px 4px 0 gray;
+  position: relative;
 
   .searchbar {
     display: grid;
@@ -145,6 +146,22 @@ html {
     }
   }
 
+  .nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    button {
+      background-color: $green;
+      color: $white;
+      border: none;
+      border-radius:2rem;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+  }
 }
 
 .main {
