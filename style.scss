@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+$white: #fff;
 $green: #16a34a;
+$grey-green: #d7e9dd;
 
 body,
 html {
@@ -10,8 +12,8 @@ html {
 .content {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 6fr;
-  gap: 15px;
+  grid-template-rows: 1fr 4fr;
+  row-gap: 15px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,7 +23,7 @@ html {
   gap: 1rem;
   grid-row: 1 / 3;
   background-color: $green;
-  color: #fff;
+  color: $white;
 
   img {
     height: 50%;
@@ -63,20 +65,62 @@ html {
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: $white;
   }
 }
 
 .header {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 2fr;
   align-items: center;
   justify-items: center;
+  padding-left: 3rem;
 
   .searchbar {
     display: grid;
-    grid-template-columns: 1fr 30fr;
+    grid-template-columns: 1fr 25fr;
     gap: 15px;
+    justify-self: start;
+
+    input {
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid $grey-green;
+      background-color: $grey-green;
+    }
+  }
+
+  .greeting {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    justify-self: start;
+
+    .cat-container {
+      display: grid;
+      align-items: center;
+      grid-row: 1 / 3;
+      height: 8rem;
+      width: 8rem;
+      justify-self: end;
+    }
+
+    p {
+      align-self: end;
+      font-weight: bold;
+    }
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
   }
 
 }
@@ -86,6 +130,7 @@ html {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 8fr;
   gap: 15px;
+  background-color: $grey-green;
 }
 
 .cards {
@@ -97,7 +142,8 @@ html {
 
 .card {
   height: 200px;
-  background-color: aqua;
+  background-color: $white;
+  border-left: 2rem solid #7c3aed;
 }
 
 h4 {
