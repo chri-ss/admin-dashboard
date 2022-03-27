@@ -221,12 +221,28 @@ h5 {
   grid-column: 1 / 2;
 }
 
-h4 {
-}
-
 .announcements,
 .trending {
   background-color: $white;
   grid-column: 1 / 2;
   border-radius: 10px;
+}
+
+.announcements {
+  display: grid;
+  padding: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  > div:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+  }
+
+  div {
+    padding-top: 1rem;
+  }
+
+  div > :first-child {
+    font-weight: bold;
+  }
 }

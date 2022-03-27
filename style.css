@@ -289,4 +289,25 @@ h5 {
   grid-column: 1 / 2;
   border-radius: 10px;
 }
+
+.announcements {
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements > div:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.announcements div {
+  padding-top: 1rem;
+}
+
+.announcements div > :first-child {
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
